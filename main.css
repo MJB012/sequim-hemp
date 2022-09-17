@@ -1,0 +1,686 @@
+/**** Reset CSS ****/
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset,
+img {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+q:before,
+q:after {
+  content: '';
+}
+
+abbr,
+acronym {
+  border: 0;
+}
+
+img,
+video {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none !important;
+  font-family: "Montserrat";
+}
+
+
+/**** General CSS ****/
+h1 {
+  font-size: 54px;
+  font-family: "Open Sans";
+}
+
+h2 {
+  font-size: 48px;
+  font-family: "Montserrat";
+}
+
+h3 {
+  font-size: 36px;
+  font-family: "Montserrat";
+}
+
+h4 {
+  font-size: 30px;
+  font-family: "Montserrat";
+}
+
+h5 {
+  font-size: 24px;
+  font-family: "Montserrat";
+}
+
+h6 {
+  font-size: 20px;
+  font-family: "Montserrat";
+  color: #FFFFFF;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 16px;
+  color: #1A1A1A;
+  margin-bottom: 10px;
+  font-family: "Montserrat";
+}
+
+a{
+  color: #FFFFFF;
+}
+
+a:hover{
+  color: #1A1A1A;
+}
+
+.btn-style-1,
+.btn-style-2 {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  border-radius: 29px;
+  padding: 14px 36px;
+  -webkit-transition-duration: 0.4s;
+  -webkit-transition-timing-function: linear;
+}
+
+.btn-style-1 {
+  background: #9BC33B;
+  color: #FFFFFF;
+  border: 1px solid #9BC33B;
+  box-shadow: 0px 0 0 #9BC33B inset;
+}
+
+.btn-style-2 {
+  background: #E9EAF0;
+  color: #1A1A1A;
+  border: 1px solid #E9EAF0;
+  box-shadow: 0px 0 0 #9bc33b inset;
+}
+
+.btn-style-1:hover,
+.btn-style-2:hover {
+  background: transparent;
+  color: #FFFFFF;
+  border-color: #1a1a1a;
+  box-shadow: 200px 0 0 #1a1a1a inset;
+}
+
+input[type="text"],
+input[type="email"] {
+  font-size: 16px;
+  font-family: "Montserrat";
+  font-weight: 300;
+  background-color: #fff;
+  border-radius: 29px;
+  border: 1px solid #707070;
+  color: #2C2A2C;
+  padding: 14px 25px;
+  line-height: normal;
+  width: 380px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* owl dots */
+.owl-carousel .owl-item img {
+  width: auto;
+}
+
+.owl-dots {
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+  left: 0;
+  text-align: center;
+}
+
+.owl-dots button.owl-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 3px;
+}
+
+.owl-carousel button.owl-dot {
+  background: transparent;
+  border: 0.5px solid #9BC33B;
+}
+
+.owl-dots button.owl-dot.active {
+  background-color: #9BC33B !important;
+}
+
+.owl-nav {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+}
+
+
+/* topbar CSS */
+.topbar{
+  background-color: #1A1A1A;
+  display: none;
+}
+
+.topbar ul{
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 0;
+}
+
+.topbar ul li{
+margin-right: 30px;
+}
+
+.topbar ul li:last-child{
+  margin-right: 0;
+}
+
+.topbar ul li a:hover{
+  color: #9BC33B;
+}
+
+/* header CSS*/
+header {
+  position: relative;
+  padding: 15px 0;
+  border: none;
+  background: linear-gradient(to right, #FFFFFF 40.8%, #9BC33B 40.8%);
+  box-shadow: 0px 0px 80px rgb(0 0 0 / 16%);
+  z-index: 99;
+}
+
+header nav ul li:not(:first-child){
+  margin-left: 40px;
+}
+
+header nav ul li.menu-item-has-children > a:after{
+  content: "\f107";
+  font-family: "Font Awesome 5 Pro";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  margin-left: 10px;
+}
+
+header nav ul li .sub-menu{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 80px;
+  background: #FFFFFF;
+  padding: 10px;
+  border-radius: 4px;
+  display: none;
+  z-index: 2;
+}
+
+header nav ul li .sub-menu li{
+  margin: 0 0 10px 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+header nav ul li .sub-menu li:last-child{
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: unset;
+}
+
+header nav ul li .sub-menu li a{
+  color: #1A1A1A;
+}
+
+header nav ul li .sub-menu li a:hover{
+  color: #9bc33b;
+}
+
+header nav ul li a {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+header nav ul li a:hover {
+  color: #1A1A1A;
+}
+
+header .header-search-form {
+  position: absolute;
+  display: none;
+}
+
+header .header-search-form input {
+  width: 451.02px;
+}
+
+header .header-search-form button {
+  background: transparent;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  position: absolute;
+  right: 0;
+  top: calc(50% - 12.5px);
+}
+
+header .header-icons{
+  margin-left: 40px;
+}
+
+header .hamburger-menu {
+  display: none;
+  background: #fff;
+  color: #9BC33B;
+  padding: 10px 13px;
+}
+
+
+/* banner CSS */
+#hero-slider {
+  background: #1A1A1A;
+  position: relative;
+}
+
+#hero-slider .item {
+  padding: 150px 0;
+}
+
+#hero-slider .slide-caption {
+  width: 625px;
+  color: #FFFFFF;
+}
+
+#hero-slider .slide-caption h1 {
+  font-weight: 500;
+  line-height: 76px;
+}
+
+#hero-slider .slide-caption p {
+  color: #FFFFFF;
+  line-height: 40px;
+  margin: 0;
+}
+
+#hero-slider .batch-icon {
+  position: absolute;
+  left: 50%;
+  top: 5%;
+}
+
+/* Our Product CSS*/
+.our-products {
+  padding: 80px 0;
+}
+
+.our-products h2 {
+  font-family: "Open Sans";
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 65px;
+  margin-bottom: 80px;
+}
+
+.our-products h2:after {
+  content: '';
+  width: 100px;
+  height: 5px;
+  background: #9BC33B;
+  margin-top: 15px;
+}
+
+.our-products .owl-item {
+  padding: 15px;
+}
+
+.our-products .item {
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: -3px 3px 20px -6px;
+}
+
+.our-products .image-wrapper {
+  border: 1px solid #E3E3E3;
+  border-radius: 8px;
+}
+
+.our-products h6 a {
+  color: #1A1A1A;
+}
+
+.our-products strong {
+  font-size: 30px;
+  font-family: "Montserrat";
+  color: #9BC33B;
+}
+
+.our-products .owl-dots {
+  bottom: -30px;
+}
+
+
+/* About Us CSS */
+.about-us {
+  height: 796px;
+}
+
+.about-us .container {
+  position: relative;
+  height: 100%;
+}
+
+.about-us .content-wrapper {
+  width: 570px;
+  padding: 60px;
+  background: #FFFFFF;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.about-us .content-wrapper h2 {
+  font-family: "Open Sans";
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  line-height: 65px;
+  margin-bottom: 60px;
+}
+
+.about-us .content-wrapper h2:after {
+  content: '';
+  width: 100px;
+  height: 5px;
+  background: #9BC33B;
+  margin-top: 15px;
+}
+
+.about-us .content-wrapper p {
+  color: #333333;
+  line-height: 30px;
+  text-align: justify;
+}
+
+
+/* Shop By Category CSS*/
+.shop-by-cats {
+  padding: 80px 0;
+}
+.shop-by-cats h2 {
+  font-family: "Open Sans";
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 65px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.shop-by-cats h2:after {
+  content: '';
+  width: 100px;
+  height: 5px;
+  background: #9BC33B;
+  margin-top: 15px;
+}
+
+.shop-by-cats a {
+  color: #1A1A1A;
+}
+
+
+/* Beneficial CBD CSS */
+.beneficial {
+  background-color: #233924;
+  padding: 80px 0;
+}
+
+.beneficial h2 {
+  font-family: "Open Sans";
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  line-height: 65px;
+  margin-bottom: 60px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.beneficial h2:after {
+  content: '';
+  width: 100px;
+  height: 5px;
+  background: #FFFFFF;
+  margin-top: 15px;
+}
+
+.beneficial img {
+  width: 100% !important;
+  object-fit: cover;
+}
+
+.beneficial p {
+  color: #FFFFFF;
+  font-family: "Open Sans";
+  line-height: 30px;
+}
+
+.beneficial .owl-dots {
+  bottom: -30px;
+}
+
+
+/* Sign Up CSS */
+.sign-up {
+  background-color: #9BC33B;
+  padding: 30px 0;
+}
+
+.sign-up h2,
+.sign-up p {
+  font-family: "Open Sans";
+  color: #F0F1EB;
+  width: 200px;
+}
+
+.sign-up .btn-style-2 {
+  background: #1A1A1A;
+  color: #FFFFFF;
+  border: 1px solid #1A1A1A;
+  box-shadow: 0px 0 0 #9bc33b inset;
+}
+
+.sign-up .btn-style-2:hover {
+  background: transparent;
+  color: #1A1A1A;
+  border-color: #1a1a1a;
+  box-shadow: 200px 0 0 #E9EAF0 inset;
+}
+
+/* Footer CSS */
+footer {
+  background-color: #191919;
+  padding: 60px 0;
+}
+
+footer p {
+  color: #fff;
+}
+
+footer ul li a {
+  line-height: 36px;
+}
+
+footer ul li a:hover {
+  color: #9BC33B;
+}
+
+footer .address {
+  line-height: 26px;
+  font-weight: normal;
+  display: flex;
+  align-items: baseline;
+}
+
+footer .social-icon a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: #FFFFFF;
+  color: #1A1A1A;
+  border: 1px solid #707070;
+  border-radius: 8px;
+}
+
+footer .social-icon a:hover {
+  background: #9BC33B;
+  color: #FFFFFF;
+}
+
+/* Copyright CSS */
+.copyright {
+  background-color: #111111;
+  padding: 30px 0;
+}
+
+.copyright p {
+  color: #fff;
+  line-height: 24px;
+  margin-bottom: 0;
+  font-weight: normal;
+}
+
+.copyright .social-card {
+  text-align: right;
+}
+
+.copyright i {
+  background-color: #000;
+  color: #fff;
+  font-size: 30px;
+  margin-left: 5px;
+}
+
+.copyright a{
+  color: #F0F1EB;
+}
+
+.copyright a:hover{
+  color: #9BC33B;
+}
+
+#scroll-top {
+  display: none;
+  position: fixed;
+  bottom: 32px;
+  right: 15px;
+  outline: none;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  padding: 8px 10px;
+  background: #9BC33B;
+  color: #fff;
+  z-index: 99;
+}
